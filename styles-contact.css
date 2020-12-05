@@ -1,0 +1,305 @@
+/*This is my 377 FoCo Web Page Project using Eric Meyer's reset at the top of my page -- your CSS starts on line 56 */
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* ---------- This is the beginning of my 377 FoCo Web Page Project ------------ */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+hr.solid_white {
+	border-top: 0.25px solid white;
+	margin: 20px 20px;
+	
+}
+
+hr.solid_blue {
+	border-top: 0.25px solid blue;
+	margin: 20px 20px;
+	
+}
+
+#images {
+	width: 100%;
+}
+
+#row{
+	height: 100%;
+}
+
+#column_left{
+	float: left;
+	width: 50%;
+	background: blue;
+	height: 100%;
+	overflow: scroll;
+}
+
+#column_right{
+	float: left;
+	width: 50%;
+	background: white;
+	height: 100%;
+	overflow: scroll;
+}
+
+#column_left::-webkit-scrollbar{
+	display: none;
+}
+
+#column_right::-webkit-scrollbar{
+	display: none;
+}
+
+a.quote:link, a:visited {
+	font-family: neue-haas-unica,sans-serif;
+	font-weight: 200;
+	font-style: italic;
+	font-size: 14pt;
+	line-height: 1.4;
+	padding: 20px 20px;
+	border: 20px solid blue;
+	margin: 10px auto 10px auto;
+	color: blue;
+	text-decoration: none;
+	display: inline-block;
+	background-color: white;
+}
+
+a.quote:hover, a:active {
+	text-decoration:underline;
+}
+
+a.plus:link, a:visited {
+	font-family: neue-haas-unica,sans-serif;
+	font-weight: 200;
+	font-style: regular;
+	font-size: 20pt;
+	line-height: 1.4;
+	padding: 10px 10px;
+	margin: 1px auto 1px auto;
+	color: blue;
+	text-decoration: none;
+	display: inline-block;
+	position: sticky;
+}
+
+a.plus:hover {
+	text-decoration:underline;
+}
+
+a.plus:focus ~ #row > #column_left{
+	width: 25%;
+}
+
+a.plus:focus ~ #row > #column_right{
+	width: 75%;
+}
+
+a.equal:link, a:visited {
+	font-family: neue-haas-unica,sans-serif;
+	font-weight: 200;
+	font-style: regular;
+	font-size: 20pt;
+	line-height: 1.4;
+	padding: 10px 10px;
+	margin: 1px auto 1px auto;
+	color: blue;
+	text-decoration: none;
+	display: inline-block;
+	position: sticky;
+}
+
+a.equal:hover {
+	text-decoration:underline;
+}
+
+a.equal:focus ~ #row > #column_left{
+	width: 50%;
+}
+
+a.equal:focus ~ #row > #column_right{
+	width: 50%;
+}
+
+a.minus:link, a:visited {
+	font-family: neue-haas-unica,sans-serif;
+	font-weight: 200;
+	font-style: regular;
+	font-size: 20pt;
+	line-height: 1.4;
+	padding: 10px 10px;
+	margin: 1px auto 1px auto;
+	color: blue;
+	text-decoration: none;
+	display: inline-block;
+	position: sticky;
+}
+
+a.minus:hover {
+	text-decoration:underline;
+}
+
+a.minus:focus ~ #row > #column_left{
+	width: 75%;
+}
+
+a.minus:focus ~ #row > #column_right{
+	width: 25%;
+}
+
+h1 {
+	font-family: neue-haas-unica,sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 20pt;
+	line-height: 1.4;
+	padding: 20px 20px;
+    margin: 10px auto 10px left;
+    color: white;
+}
+
+h2 {
+	font-family: neue-haas-unica,sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 20pt;
+	line-height: 1.4;
+	padding: 20px 20px;
+	margin: 10px auto 10px left;
+	color: blue;
+	background-color: white;
+	position:sticky;
+	top: 0;
+	border: solid blue;
+	border-width: 0.25px 0px 0.25px 0px;
+
+}
+
+h3 {
+	font-family: neue-haas-unica,sans-serif;
+	font-weight: 400;
+	font-style: italic;
+   	font-size:12pt;
+  	line-height: 1.4;
+	padding: 10px 20px;
+   	margin: auto;
+	color: black;
+	background-color: white;
+	border: solid black;
+	border-width: 2px 2px;
+	width: 50%;
+	position: sticky;
+	top:400px;
+	display: flex;
+	justify-content: center;
+	text-align: inherit;
+}
+
+p {
+	font-family: neue-haas-unica,sans-serif;
+	font-weight: 200;
+	font-style: normal;
+	font-size: 16pt;
+	line-height: 1.4;
+	padding: 10px 20px;
+	margin: 10px auto 10px auto;
+	color: white;
+}
+
+@media (max-width: 800px) {
+	h1 {
+		font-size: 12pt;
+	}
+	h2 {
+		font-size: 12pt;
+		position: static;
+		top: 0;
+	}
+	p {
+		font-size: 12pt;
+	}
+
+	#images {
+		width: 100%;
+		position: static;
+		
+	}
+
+	#column_left{
+		float: none;
+		width: 100%;
+		background: blue;
+		height: 100%;
+		overflow: visible;
+	}
+	#column_right{
+		float: none;
+		width: 100%;
+		background: blue;
+		height: 100%;
+		overflow: visible;
+	}
+
+
+
+}
